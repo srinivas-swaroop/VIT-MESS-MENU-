@@ -1,0 +1,280 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Section */
+h1 {
+    background-color: #7a2a2a; /* Brownish Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Date and Time Section */
+h3 {
+    background-color: #d22b2b; /* Red block */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Meal Block Section */
+.meal-block {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.meal-item {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meal-item h5 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Section */
+header {
+    background-color: #7a2a2a; /* Brownish Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    background-color: #d22b2b; /* Red block */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Meal Block Section */
+.meal-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.meal-item {
+    background-color: white;
+    padding: 20px;
+    width: 22%; /* Adjust width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meal-item h5 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Hover effect for meal items */
+.meal-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meal-item p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .meal-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .meal-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meal-item {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .meal-item h5 {
+        font-size: 16px;
+    }
+
+    .meal-item p {
+        font-size: 12px;
+    }
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Section */
+header {
+    background-color: #7a2a2a; /* Brownish Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    background-color: #d22b2b; /* Red block */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Meal Block Section */
+.meal-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+/* Flexbox layout for meal items on larger screens */
+@media (min-width: 1024px) {
+    .meal-block {
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    /* Breakfast and Lunch side by side */
+    #breakfast, #lunch {
+        width: 48%;
+    }
+
+    /* Snacks and Dinner side by side */
+    #snacks, #dinner {
+        width: 48%;
+    }
+}
+
+/* Meal Item Styling */
+.meal-item {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meal-item h5 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Hover effect for meal items */
+.meal-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meal-item p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 1024px) {
+    .meal-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .meal-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meal-item {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .meal-item h5 {
+        font-size: 16px;
+    }
+
+    .meal-item p {
+        font-size: 12px;
+    }
+}
+
