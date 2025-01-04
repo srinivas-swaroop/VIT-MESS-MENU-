@@ -278,7 +278,7 @@ function updateMenu() {
     
     if (dayMenu) {
         // Depending on the time of the day, show the respective menu
-        if (currentHour >= 6 && currentHour < 10) {
+        if (currentHour >= 0 && currentHour < 10) {
             document.getElementById('breakfast-menu').textContent = dayMenu.meals.breakfast.join(", ");
             document.getElementById('lunch-menu').textContent = 'Lunch will be available later.';
             document.getElementById('snacks-menu').textContent = 'Snacks will be available later.';
@@ -293,7 +293,7 @@ function updateMenu() {
             document.getElementById('lunch-menu').textContent = 'Lunch has ended.';
             document.getElementById('snacks-menu').textContent = dayMenu.meals.snacks.join(", ");
             document.getElementById('dinner-menu').textContent = 'Dinner will be available later.';
-        } else {
+        } else if (currentHour >= 18 && currentHour < 23){
             document.getElementById('breakfast-menu').textContent = 'Breakfast has ended.';
             document.getElementById('lunch-menu').textContent = 'Lunch has ended.';
             document.getElementById('snacks-menu').textContent = 'Snacks have ended.';
