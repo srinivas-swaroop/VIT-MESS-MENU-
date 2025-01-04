@@ -68,7 +68,7 @@ const MenuData = {
             "Phulka, Black Dal Makhni, Raw Banana Bajji"
           ],
           "snacks": [
-            "Veg Manchurian"
+            "Raw Banana Bajji"
           ],
           "dinner": [
             "Phulka, Dal, Veg Fried Rice, White Rice"
