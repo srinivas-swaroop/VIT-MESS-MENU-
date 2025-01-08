@@ -278,3 +278,25 @@ footer {
     }
 }
 
+/* Disclaimer Section */
+.disclaimer {
+    background-color: #ffefc1; /* Light yellow background */
+    color: #856404; /* Dark amber text */
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 90%;
+    font-size: 14px;
+    border: 1px solid #ffeeba; /* Border to match background */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Media Query for Disclaimer */
+@media (max-width: 768px) {
+    .disclaimer {
+        font-size: 12px;
+        width: 95%;
+    }
+}
